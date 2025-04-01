@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Laga | Web ",
-  description: "",
+  description: "At lagaweb, we create intelligent software solutions tailored to your business needs. Our team of experts is committed to providing the latest technologies in web development, applications, and integrated systems to ensure your success in the digital world.",
 };
 
 export default function RootLayout({ children }) {
