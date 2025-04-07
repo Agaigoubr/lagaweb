@@ -6,7 +6,9 @@ import Skill from "@/app/Pag/Skill/page"
 import Skile from "@/app/Pag/Skile/page"
 import Kalimat from "@/app/Pag/Kalimat/page"
 import Khadamat from "@/app/Pag/Khadamat/page"
-import Projuct from "@/app/Projuct/page";
+//import Projuct from "@/app/Projuct/page";
+import Contact from "./contact/page";
+import Proj from "@/components/Proj/page"
 import { Alfa_Slab_One, Averia_Serif_Libre, Merriweather } from 'next/font/google';
 
 const alfaSlab = Alfa_Slab_One({ weight: '400', subsets: ['latin'] });
@@ -26,8 +28,9 @@ export default function Home() {
 <Skile />
 <Kalimat />
 <Khadamat />
-<Projuct />
 
+<Proj />
+<Contact/>
 
 
   </main>
