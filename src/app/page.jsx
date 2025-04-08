@@ -11,6 +11,8 @@ import Khadamat from "@/app/Pag/Khadamat/page"
 import Proj from "@/components/Proj/page"
 import { Alfa_Slab_One, Averia_Serif_Libre, Merriweather } from 'next/font/google';
 import Contact from "./contact/page";
+import Link from "next/link";
+import Linke from "@/app/Linke/page";
 //import Projuct from "@/app/Projuct/page";
 
 
@@ -32,6 +34,7 @@ export default function Home() {
 <Kalimat />
 <Khadamat />
 <Contact />
+<Linke />
 <Proj />
 
 
