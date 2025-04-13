@@ -2,7 +2,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion'; // Ensure framer-motion is imported correctly.
+import { motion } from 'framer-motion';
 
 const services = [
   'Logo & Branding Design -',
@@ -12,22 +12,32 @@ const services = [
   'Video Design & Motion Graphics - ',
 ];
 
-const MarqueeComponent = ({ speed = 10, bgColor = 'bg-[#666666]', textColor = 'text-white' }) => {
+const MarqueeComponent = ({ 
+  speed = 25, 
+  bgColor = 'bg-black', 
+  textColor = 'text-white',
+  accentColor = 'text-[#4ade80]' 
+}) => {
   return (
-    <div className={`overflow-hidden ${bgColor} py-4`}>
+    <div className={`relative overflow-hidden ${bgColor} py-6`}>
       <div className="whitespace-nowrap flex items-center">
         {[...Array(2)].map((_, index) => (
           <motion.div
             key={index}
-            className="flex space-x-6 px-4"
-            initial={{ x: index === 0 ? 0 : 1000 }}
-            animate={{ x: -1000 }}
-            transition={{ duration: speed, repeat: Infinity, ease: 'linear' }}
+            className="flex space-x-8 px-4"
+            initial={{ x: index === 0 ? 0 : '100%' }}
+            animate={{ x: '-100%' }}
+            transition={{ 
+              duration: speed, 
+              repeat: Infinity, 
+              ease: 'linear',
+              repeatType: 'loop'
+            }}
           >
             {services.map((service, i) => (
               <h4
                 key={i}
-                className={`${textColor} text-xl font-semibold hover:scale-105 transition-transform`}
+                className={`${textColor} text-xl md:text-2xl font-semibold hover:scale-105 transition-transform duration-300`}
               >
                 {service}
               </h4>
@@ -35,7 +45,19 @@ const MarqueeComponent = ({ speed = 10, bgColor = 'bg-[#666666]', textColor = 't
           </motion.div>
         ))}
       </div>
-      <h1 className='absolute text-[35px] font-light text-[#4dff18] left-[20px] ml-[40px] w-[210px] h-[50px]' >Our Services</h1>
+      
+      <div className="absolute left-0 top-0 bottom-0 flex items-center">
+        <div className="bg-black bg-opacity-80 px-6 py-3 ml-4 md:ml-10 flex items-center">
+          <motion.h1 
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className={`${accentColor} text-2xl md:text-3xl font-bold`}
+          >
+            Our Services
+          </motion.h1>
+        </div>
+      </div>
     </div>
   );
 };

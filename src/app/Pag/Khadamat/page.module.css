@@ -1,22 +1,141 @@
+/* Add to your global CSS or tailwind config */
+:root {
+  --color-black: #111111;
+  --color-white: #FFFFFF;
+  --color-light-green: #8AE9C1;
+  --color-dark-green: #2A9D8F;
+}
+
+/* Add these custom color classes to your tailwind.config.js */
+/* module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        black: 'var(--color-black)',
+        white: 'var(--color-white)',
+        lightGreen: 'var(--color-light-green)',
+        darkGreen: 'var(--color-dark-green)',
+      },
+    },
+  },
+  plugins: [],
+} */
+
+/* If you're not using Tailwind, you can use these styles directly */
 .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20vw;
-    margin-top: 20px;
-    margin-bottom: 300px;
-    margin-left: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  background-color: var(--color-white);
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40%;
+  height: 4px;
+  background-color: var(--color-light-green);
+}
+
+.body {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 4rem;
+}
+
+.line-mask {
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.word {
+  display: inline-block;
+  margin-right: 0.5rem;
+  transform-origin: bottom;
+  transition: color 0.3s ease;
+}
+
+.word:hover {
+  color: var(--color-light-green);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.service-card {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(138, 233, 193, 0.3);
+  background-color: var(--color-light-green);
+  color: var(--color-black);
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background-color: var(--color-dark-green);
+  transition: height 0.3s ease;
+}
+
+.service-card:hover::before {
+  height: 100%;
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-dark-green);
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  color: rgba(17, 17, 17, 0.7);
+  line-height: 1.6;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .body {
+    font-size: clamp(1.2rem, 4vw, 2rem);
   }
   
-  .body{
-    font-size: 6vw;
+  .service-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .lineMask{
-    overflow: block;
-  }
-  
-  .lineMask p{
-    margin: 2px;
-    font-weight: 970;
-  }
+}
