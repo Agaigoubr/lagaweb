@@ -4,8 +4,8 @@ export default function Description() {
   return (
     <>
       {/* تصميم سطح المكتب */}
-      <div className="hidden md:flex justify-center my-40 flex-col items-center">
-        <h1 className="text-[3.5vw] text-[#24a12f] uppercase text-center max-w-[70vw] leading-none">
+      <div className="hidden md:flex  justify-center my-40 flex-col items-center">
+        <h1 className="text-[3.5vw] text-[#fcf805] uppercase text-center max-w-[70vw] leading-none">
           Who are we?
         </h1>
         <p className="text-[2.5vw] uppercase text-center max-w-[70vw] leading-none">
@@ -16,7 +16,7 @@ export default function Description() {
 
       {/* تصميم الهاتف */}
       <div className="block md:hidden flex flex-col items-center text-center my-20 px-4">
-        <h1 className="text-[8vw] text-[#24a12f] uppercase leading-tight">
+        <h1 className="text-[8vw] text-[#e7f70e] uppercase leading-tight">
           Who are we?
         </h1>
         <p className="text-[5vw] uppercase leading-tight mt-4">
