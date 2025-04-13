@@ -72,6 +72,7 @@ export default function Home() {
           </FramerMagnetic>
           
           <FramerMagnetic>
+<<<<<<< HEAD
             <div className={styles.teamCard}>
               <div className={styles.svgContainer}>
                 <svg viewBox="0 0 51.1 36.69">
@@ -81,6 +82,12 @@ export default function Home() {
               <h3>YouTube</h3>
               <p>Video Content</p>
             </div>
+=======
+          <img 
+        className='w-[70px] h-[70px] rounded-[70px]'
+        src="icon/adam.png" alt="youdf" />
+        <h1 className='text-white text-[13px]'>Devlopper AI</h1>
+>>>>>>> f93f301f10acc62c4b2b56c38f6fe20e92652965
           </FramerMagnetic>
 
           <FramerMagnetic>
@@ -94,12 +101,28 @@ export default function Home() {
               <p>Social Media</p>
             </div>
           </FramerMagnetic>
+<<<<<<< HEAD
         </div>
       </section>
 
       <footer className={styles.footer}>
         <p>© 2025 Sochn Made. All rights reserved.</p>
       </footer>
+=======
+
+          
+       
+      </div>
+      <video
+  className="rounded-[40px] w-[800px] h-[800px]"
+  src="/proji/vid.mp4"
+  autoPlay
+  muted
+  loop
+  playsInline
+></video>
+
+>>>>>>> f93f301f10acc62c4b2b56c38f6fe20e92652965
     </main>
   );
 }

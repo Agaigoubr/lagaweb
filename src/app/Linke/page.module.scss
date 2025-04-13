@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     min-height: 100vh;
     background-color: #ffffff;
     color: #000000;
@@ -23,6 +24,21 @@
         span {
           color: #49ca0d;
           font-weight: 800;
+=======
+    height: 100vh;
+    background-color: #c0d1b80a;
+    .container{
+        display: flex;
+        svg{
+            height: 50px;
+            padding: 50px;
+            fill: #000000;
+            transition: fill 0.2s;
+            cursor: pointer;
+            &:hover{
+                fill: #ec4e39;
+            }
+>>>>>>> f93f301f10acc62c4b2b56c38f6fe20e92652965
         }
       }
     }

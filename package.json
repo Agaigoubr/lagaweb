@@ -9,13 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.1",
     "@radix-ui/react-tooltip": "^1.1.8",
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",
     "@studio-freight/lenis": "^1.0.42",
     "axios": "^1.8.4",
     "emailjs-com": "^3.2.0",
-    "framer-motion": "^12.6.3",
+    "framer-motion": "^12.6.5",
     "gsap": "^3.12.7",
     "lenis": "^1.2.3",
     "lucide-react": "^0.487.0",
@@ -25,8 +26,17 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",
+<<<<<<< HEAD
     "sass": "^1.86.3",
     "typed.js": "^2.1.0"
+=======
+    "react-toastify": "^11.0.5",
+    "react-tsparticles": "^2.12.0",
+    "sass": "^1.86.3",
+    "swiper": "^9.4.1",
+    "three": "^0.175.0",
+    "tsparticles": "^2.12.0"
+>>>>>>> f93f301f10acc62c4b2b56c38f6fe20e92652965
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
