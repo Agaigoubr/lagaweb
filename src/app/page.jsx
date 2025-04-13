@@ -14,6 +14,7 @@ import Contact from "./contact/page";
 import Link from "next/link";
 import Linke from "@/app/Linke/page";
 //import Projuct from "@/app/Projuct/page";
+import Aranas from "@/app/aranas/page";
 
 
 const alfaSlab = Alfa_Slab_One({ weight: '400', subsets: ['latin'] });
@@ -35,7 +36,9 @@ export default function Home() {
 <Khadamat />
 <Contact />
 <Linke />
+<Aranas/>
 <Proj />
+
 
 
 

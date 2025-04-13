@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export default function PhysicsText() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const text = "siteWeb Loga saas disainr video".split(' ')
+  const text = "siteWeb Loga saas Design  video lagaweb".split(' ')
 
   return (
     <div 
