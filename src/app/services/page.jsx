@@ -1,10 +1,9 @@
-import React from 'react'
+import PhysicsText from '@/components/PhysicsText'
 
-export default function Services() {
+export default function Home() {
   return (
-    <div>Services
-
-    <h1 className='text-[100px]'>في قيادة التطور</h1>
-    </div>
+    <main className="bg-white">
+      <PhysicsText />
+    </main>
   )
 }
